@@ -1,0 +1,13 @@
+name : PragmaticSelf website
+brand : PragmaticSelf
+description : Pragmaticself is a collection of motivational, practical, logical advice
+keyword : motivation, pragmatic, self-development, personal development, better life
+url : http://pragmaticself.com
+email : alpar.gabos@gmail.com
+twitter : alpargabos
+github : alpargabos
+author : Alpar Gabos
+analytics : UA-8418273-8
+year : 2016
+markdown : kramdown
+exclude : ["node_modules", "gulpfile.js", "package.json"]

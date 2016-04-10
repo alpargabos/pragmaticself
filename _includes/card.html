@@ -1,0 +1,19 @@
+<section class="card">
+  <div>
+    <a href="{{ post.url }}">
+      {% if {{post.thumb}} contains 'http' %}
+        {% assign img_url = {{post.thumb}}  %}
+      {% else %}
+        {% capture img_url %}../assets/img/{{ post.thumb }}{% endcapture %}
+      {% endif %}
+      <div class="card_img" style="background-image: url({{img_url}})">
+      </div>
+      <p class="title_bar">
+        <span class="title"> {{post.title}} </span>
+        <span class="subtitle"> {{post.subtitle}} </span>
+      </p>
+      <span class="date float-left">{{post.date | date: '%B %d, %Y'}}</span>
+      <span class="category float-right">#{{post.category}}</span>
+    </a>
+  </div>
+</section>

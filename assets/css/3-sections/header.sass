@@ -1,0 +1,41 @@
+header
+  $height: 40px
+  $padding-a: 2px
+  $text-height: $height - $padding-a
+
+  .row
+    padding-top: 10px
+    padding-bottom: 10px
+
+  .menu-text
+    font-size: 20px
+    padding: 0px
+    line-height: $text-height
+
+  .active
+    background-color: $pragmatic-primary-color
+    color: white
+    border-radius: 20px
+
+  .menu
+    li a
+      display: table-cell
+      padding: $padding-a
+      height: $height
+      vertical-align: middle
+
+  .span
+    line-height: 22px
+    padding-left: 15px
+    padding-right: 15px
+
+  .logo
+    max-width: 150px
+    min-width: $text-height
+    background:
+      image: url(/favicon/favicon-96x96.png)
+      repeat: no-repeat
+      position: center
+      size: contain
+    height: $text-height
+    padding: 0

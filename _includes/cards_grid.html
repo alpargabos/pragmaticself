@@ -1,0 +1,9 @@
+<section class="cards-grid">
+  <div class="row">
+    {% for post in site.posts %}
+      <div class="small-10 small-centered large-uncentered large-4 medium-6 medium-uncentered columns">
+        {% include card.html %}
+      </div>
+    {% endfor %}
+  </div>
+</section>

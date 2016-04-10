@@ -1,0 +1,10 @@
+/* TEAM */
+  Developer: Alpar Gabos
+  Site: alpargabos.com
+  Twitter: @alpargabos
+  Github: @alpargabos
+  Location: Hungary, Pest
+
+/* SITE */
+  Standards: HTML5, MD, SCSS/CSS3, JS
+  Components: Zurb Foundation, Jykill, jQuery, Modernizr, bower, grunt
