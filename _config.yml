@@ -11,3 +11,5 @@ analytics : UA-8418273-8
 year : 2016
 markdown : kramdown
 exclude : ["node_modules", "gulpfile.js", "package.json"]
+paginate: 9
+paginate_path: "/page:num/"

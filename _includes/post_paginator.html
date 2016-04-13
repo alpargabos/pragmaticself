@@ -1,0 +1,32 @@
+<section class="post_paginator">
+    <div class="pagination">
+      {% if paginator.total_pages > 1 %}
+      <ul class="pagination" role="menubar" aria-label="Pagination">
+        <!-- Previous -->
+        {% if paginator.page == 1 %}
+          <li class="arrow unavailable" aria-disabled="true"><a href="">&laquo;</a></li>
+        {% else %}
+          <li class="arrow"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+          <!-- Page numbers -->
+          {% if page == paginator.page %}
+            <li class="current"><a href="">{{page}}</a></li>
+          {% elsif page == 1 %}
+            <li> <a href="{{ site.url }}">{{ page }}</a></li>
+          {% else %}
+            <li> <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+          {% endif %}
+        {% endfor %}
+
+        <!-- Next -->
+        {% if paginator.page == paginator.total_pages %}
+          <li class="arrow unavailable" aria-disabled="true"><a href="">&raquo;</a></li>
+        {% else %}
+          <li class="arrow"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
+        {% endif %}
+      </ul>
+      {% endif %}
+    </div>
+</section>

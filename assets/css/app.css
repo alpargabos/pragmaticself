@@ -4589,3 +4589,22 @@ section.card {
     color: gray;
     font-size: 15px;
     margin-bottom: 25px; }
+
+section.post_paginator {
+  font-family: bebas_neuebold;
+  text-align: center; }
+  section.post_paginator .pagination {
+    margin: 20px 0px; }
+  section.post_paginator li {
+    padding: 0px 2px; }
+    section.post_paginator li a {
+      color: #999999; }
+  section.post_paginator li.current a {
+    color: white; }
+    section.post_paginator li.current a:hover {
+      cursor: default;
+      background-color: transparent; }
+  section.post_paginator li.unavailable {
+    cursor: default;
+    color: #999999;
+    pointer-events: none; }
