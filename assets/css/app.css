@@ -4517,10 +4517,9 @@ section.featured-post {
       font-family: montserrat; }
 
 section.sub-nav-menu {
-  background-color: #eaebed;
-  height: 40px; }
+  background-color: #34495e; }
   section.sub-nav-menu a {
-    color: grey; }
+    color: black; }
   section.sub-nav-menu ul {
     margin: 0;
     display: -webkit-box;
@@ -4535,8 +4534,8 @@ section.sub-nav-menu {
     text-transform: uppercase; }
     section.sub-nav-menu li.active {
       background-color: white;
-      border-left: 2px solid #eaebed;
-      border-right: 2px solid #eaebed; }
+      border-left: 2px solid white;
+      border-right: 2px solid white; }
       section.sub-nav-menu li.active a {
         color: black;
         cursor: default; }
@@ -4547,17 +4546,27 @@ section.sub-nav-menu {
     display: block;
     float: left;
     padding: 5px 20px; }
+  @media only screen and (max-width: 40em) {
+    section.sub-nav-menu ul {
+      background-color: #34495e;
+      display: block;
+      width: 100%; }
+    section.sub-nav-menu li {
+      background-color: #34495e;
+      clear: left;
+      vertical-align: middle;
+      text-align: center;
+      width: 100%; }
+      section.sub-nav-menu li.active {
+        background-color: white;
+        -webkit-border-radius: 20px;
+                border-radius: 20px; }
+        section.sub-nav-menu li.active a {
+          color: #3498db; } }
 
-section.post {
-  font-family: bebas_neuebold; }
-  section.post .post_img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    width: auto;
-    height: 459px; }
-  section.post .title {
-    text-align: center; }
+section.cards-grid {
+  font-family: bebas_neuebold;
+  background-color: white; }
 
 section.card {
   display: relative;
@@ -4621,3 +4630,14 @@ section.post_paginator {
     cursor: default;
     color: #999999;
     pointer-events: none; }
+
+section.post {
+  font-family: bebas_neuebold; }
+  section.post .post_img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: auto;
+    height: 459px; }
+  section.post .title {
+    text-align: center; }

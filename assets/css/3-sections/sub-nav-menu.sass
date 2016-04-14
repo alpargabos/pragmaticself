@@ -1,9 +1,9 @@
 section.sub-nav-menu
-  background-color: #eaebed
-  height: 40px
+  // background-color: $pragmatic-primary-color
+  background-color: $pragmatic-primary-color
 
   a
-    color: grey
+    color: black
 
   ul
     margin: 0
@@ -14,8 +14,8 @@ section.sub-nav-menu
     text-transform: uppercase
     &.active
       background-color: white
-      border-left: 2px solid #eaebed
-      border-right: 2px solid #eaebed
+      border-left: 2px solid white
+      border-right: 2px solid white
       a
         color: black
         cursor: default
@@ -28,3 +28,21 @@ section.sub-nav-menu
     display: block
     float: left
     padding: 5px 20px
+
+  @media only screen and (max-width: 40em)
+    ul
+      background-color: $pragmatic-primary-color
+      display: block
+      width: 100%
+
+    li
+      background-color: $pragmatic-primary-color
+      clear: left
+      vertical-align: middle
+      text-align: center
+      width: 100%
+      &.active
+        background-color: white
+        border-radius: 20px
+        a
+          color: #3498db
