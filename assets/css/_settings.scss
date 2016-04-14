@@ -47,7 +47,7 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$primary-color: #F89406;
+$primary-color: #34495e;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -69,7 +69,7 @@ $global-radius: 0;
 $global-text-direction: ltr;
 
 
-$pragmatic-primary-color: #F89406;
+$pragmatic-primary-color: $primary-color;
 // 2. Breakpoints
 // --------------
 

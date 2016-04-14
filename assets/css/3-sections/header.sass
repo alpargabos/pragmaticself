@@ -3,6 +3,9 @@ header
   $padding-a: 2px
   $text-height: $height - $padding-a
 
+  .top-bar
+    background-color: $pragmatic-primary-color
+
   .row
     padding-top: 10px
     padding-bottom: 10px
@@ -11,18 +14,25 @@ header
     font-size: 20px
     padding: 0px
     line-height: $text-height
+    color: white
 
   .active
-    background-color: $pragmatic-primary-color
-    color: white
+    background-color: white
+    color: #3498db
     border-radius: 20px
 
-  .menu
-    li a
+  ul.menu
+    background-color: $pragmatic-primary-color
+    text-align: center
+
+  ul.menu li
+    display: inline-block
+    a
       display: table-cell
       padding: $padding-a
       height: $height
       vertical-align: middle
+      color: white
 
   .span
     line-height: 22px
