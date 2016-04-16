@@ -4641,3 +4641,20 @@ section.post {
     height: 459px; }
   section.post .title {
     text-align: center; }
+
+section.subscribe-bar {
+  background-color: #3498db;
+  color: white;
+  position: relative; }
+  section.subscribe-bar .subscribe-form {
+    padding: 20px 0px; }
+  section.subscribe-bar .email, section.subscribe-bar .button {
+    margin: 0px; }
+  section.subscribe-bar p {
+    color: #bdc3c7; }
+
+footer {
+  background-color: #34495e;
+  color: #7f8c8d; }
+  footer h5 {
+    margin: 0px; }

@@ -66,19 +66,7 @@
             {{ content }}
           </div>
 
-         <footer class="site-footer row column mtl" role="contentinfo">
-          <hr/>
-            <ul class="menu quiet copyright align-right">
-              <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i>@{{ site.twitter }}</a></li>
-              <li><a href="https://github.com/{{ site.github }}/"><i class="fa fa-github"></i>@{{ site.github }}</a></li>
-              <li>{{ site.year }}</li>
-            </ul>
-            <ul class="menu quiet">
-              {% include footer.html %}
-            </ul>
-          </footer>
-
-        <!-- end .off-canvas-content -->
+        {% include footer.html %}
 
       </div><!-- end .off-canvas-wrapper-inner -->
     </div><!-- end .off-canvas-wrapper -->
