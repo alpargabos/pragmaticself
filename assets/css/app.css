@@ -4482,6 +4482,57 @@ header .logo {
   height: 38px;
   padding: 0; }
 
+header .container {
+  width: 40px; }
+
+header .searchbox {
+  position: relative;
+  min-width: 30px;
+  width: 0%;
+  height: 30px;
+  float: right;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s; }
+
+header .searchbox-input {
+  background-color: white;
+  color: #3498db;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  width: 100%;
+  height: 30px; }
+
+header .searchbox-icon,
+header .searchbox-submit {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background: #34495e; }
+
+header .searchbox-open {
+  width: 100%; }
+  header .searchbox-open .searchbox-icon,
+  header .searchbox-open .searchbox-submit {
+    background: #34495e;
+    -webkit-border-radius: 19px;
+            border-radius: 19px;
+    color: white;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+    border: 1px solid white; }
+
 section.featured-post {
   background: url(/assets/img/get-unstuck.png) no-repeat center bottom;
     background-color: #eede39;
@@ -4519,7 +4570,7 @@ section.featured-post {
 section.sub-nav-menu {
   background-color: #34495e; }
   section.sub-nav-menu a {
-    color: black; }
+    color: white; }
   section.sub-nav-menu ul {
     margin: 0;
     display: -webkit-box;
@@ -4665,15 +4716,16 @@ footer {
   footer h5 {
     margin: 0px; }
   footer a.fa {
-    font-size: 50px;
+    font-size: 40px;
     padding: 0px 20px;
     color: #bdc3c7; }
     footer a.fa:hover {
       color: red; }
   footer .envelope {
-    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     text-align: center;
-    background-color: #2c3e50; }
+    background-color: #3a526a; }
   footer .contact-t {
     font-size: 26px;
     font-weight: normal;
@@ -4686,7 +4738,7 @@ footer {
   footer .ampersand {
     position: relative;
     bottom: 19px;
-    background: #2c3e50;
+    background: #3a526a;
     padding: 0px 20px; }
   footer .contact-sub {
     font-size: 20px;
@@ -4702,17 +4754,14 @@ footer {
     font-size: 12px;
     font-weight: normal;
     border-top: 1px solid #34495e;
-    padding: 10px;
-    text-transform: uppercase; }
-  footer .logo {
-    max-width: 150px;
-    background-image: url(/assets/img/logo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 30px;
-    padding: 0;
-    margin-bottom: 9px; }
+    padding: 10px; }
+  footer .logo-text {
+    font-size: 20px;
+    display: inline-block;
+    color: #3498db;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -20px; }
   footer .profile {
     display: inline-block;
     width: 70%;
@@ -4728,3 +4777,8 @@ footer {
     display: inline-block;
     width: 25%;
     padding: 0px; }
+  footer .copyright {
+    color: #3a526a;
+    font-weight: bold;
+    margin: 0px;
+    padding: 5px; }

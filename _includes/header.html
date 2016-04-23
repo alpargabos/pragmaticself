@@ -17,19 +17,21 @@
     <div class="top-bar-right">
       <ul class="menu">
         <li><a href="#home">
-            <div class="span active">BLOG</div>
+            <div id="top-menu" class="span active">BLOG</div>
         </a></li>
-        <li><a href="/about">
-            <div class="span">ABOUT</div>
+        <li><a href="#about">
+            <div id="top-menu" class="span">ABOUT</div>
         </a></li>
-        <li><a href="/contact">
-            <div class="span">CONTACT</div>
+        <li><a href="#contact">
+            <div id="top-menu" class="span">CONTACT</div>
         </a></li>
-        <li><a href="#search">
-            <div class="span i fa fa-search"></div>
-        </a></li>
-        <!-- <li><input type="search" placeholder="Search"></li> -->
-        <!-- <li><button type="button" class="button">Search</button></li> -->
+        <li id="top-menu" class="container">
+            <form class="searchbox">
+                <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                <input type="submit" class="searchbox-submit" value="GO">
+                <span class="searchbox-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+            </form>
+        </li>
       </ul>
     </div>
   </div>
