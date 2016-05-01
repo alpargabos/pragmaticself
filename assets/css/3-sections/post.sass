@@ -1,16 +1,92 @@
 section.post
-  font-family: bebas_neuebold
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  font-size: 20px
+  line-height: normal
+  color: #333
+  background-color: white
+
+  h2.title
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+    font-weight: bold
+    font-size: 32px
+    // color: $pragmatic-primary-color
+    color: white
+    padding-top: 10px
+
+  h3.subtitle
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+    font-weight: bold
+    font-size: 20px
+    // color: #555
+    color: white
+
+  h5.date
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+    font-weight: normal
+    font-size: 15px
+    // color: #555
+    color: white
+
 
   .post_img
     background:
-      size: cover
       repeat: no-repeat
-      position: 50% 50%
+      position: center
+      background-position: bottom
     width: auto
     height: 459px
 
+  .titlebar
+    padding-bottom: 20px
   .title
     text-align: center
 
   .content
-    
+    p
+      padding-top: 20px
+      color: #555
+
+    span.big
+      font-size: 3.5em
+      line-height: 50px
+      float: left
+      font-weight: 700
+      margin: 6px 8px -5px 0
+    //
+    // blockquote
+    //   background: #f9f9f9
+    //   border-left: 10px solid #ccc
+    //   margin: 1.5em 10px
+    //   padding: 0.5em 10px
+    //   quotes: "\201C""\201D"
+    //   font-family: sans-serif
+    //
+    // blockquote:before
+    //   color: #ccc
+    //   content: open-quote
+    //   font-size: 4em
+    //   line-height: 0.1em
+    //   margin-right: 0.25em
+    //   vertical-align: -0.4em
+    //
+    // blockquote p
+    //   display: inline
+
+    blockquote
+      background-color: rgba(0,0,0,0.1)
+      border-radius: 5px
+      position: relative
+      font-size: 18px
+      padding: 10px 60px
+      border: 0
+      color: rgba(0,0,0,0.6)
+      margin: 0 0 30px 0
+
+    blockquote:before
+      position: absolute
+      left: 10px
+      top: -15px
+      content: '“'
+      font-size: 60px
+      font-family: serif
+      color: rgba(0,0,0,0.3)

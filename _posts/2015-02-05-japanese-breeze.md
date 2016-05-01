@@ -6,8 +6,8 @@ date: 2015-02-05
 backgrounds:
     - https://dl.dropboxusercontent.com/u/18322837/cdn/Streetwill/tube.jpg
 thumb: road.jpeg
-categories: travel city
-tags: japan winter spring metropolis
+categories: lifehacks
+tags: pragmatism lifehacks
 ---
 
 **Lorem ipsum** dolor sit amet, consectetur adipiscing elit. _Ut porta_, felis eget vehicula `porttitor`, mauris ipsum tincidunt ligula, ac pretium risus sapien at metus. Donec pellentesque volutpat porttitor. Integer condimentum sagittis viverra. Vivamus suscipit quis lectus porta sollicitudin.

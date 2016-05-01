@@ -2,10 +2,20 @@
     <div class="row">
         <div class="smal-6 small-centered columns">
             <ul>
-                <li id="sub-nav-menu" class="active"><a href="#">All</a></li>
-                <li id="sub-nav-menu"><a href="#">Motivation</a></li>
-                <li id="sub-nav-menu"><a href="#">Pragmatism</a></li>
-                <li id="sub-nav-menu"><a href="#">Life hacks</a></li>
+              {% case include.active %}
+                {% when "all" %}
+                  {% assign all = "active"  %}
+                {% when "motivation" %}
+                  {% assign motivation = "active"  %}
+                {% when "pragmatism" %}
+                  {% assign pragmatism = "active"  %}
+                {% when "lifehacks" %}
+                  {% assign lifehacks = "active"  %}
+              {% endcase %}
+                <li id="sub-nav-menu" class="{{all}}"><a href="/">All</a></li>
+                <li id="sub-nav-menu" class="{{motivation}}"><a href="/category/motivation.html">Motivation</a></li>
+                <li id="sub-nav-menu" class="{{pragmatism}}"><a href="/category/pragmatism.html">Pragmatism</a></li>
+                <li id="sub-nav-menu" class="{{lifehacks}}"><a href="/category/lifehacks.html">Life hacks</a></li>
             </ul>
         </div>
     </div>

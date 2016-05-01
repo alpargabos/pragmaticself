@@ -4525,13 +4525,32 @@ header .searchbox-open {
   width: 100%; }
   header .searchbox-open .searchbox-icon,
   header .searchbox-open .searchbox-submit {
-    background: #34495e;
+    background: #3498db;
     -webkit-border-radius: 19px;
             border-radius: 19px;
     color: white;
     -webkit-transition: width 0.3s;
     transition: width 0.3s;
     border: 1px solid white; }
+
+header .search-results {
+  width: 0px;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right; }
+
+header .search-results-open {
+  width: 320px;
+  height: auto;
+  margin-right: 20px; }
+
+header a.search-results {
+  width: 100%;
+  height: 100%; }
+  header a.search-results:hover {
+    color: #3498db; }
 
 section.featured-post {
   background: url(/assets/img/get-unstuck.png) no-repeat center bottom;
@@ -4683,15 +4702,64 @@ section.post_paginator {
     pointer-events: none; }
 
 section.post {
-  font-family: bebas_neuebold; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  color: #333;
+  background-color: white; }
+  section.post h2.title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    padding-top: 10px; }
+  section.post h3.subtitle {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white; }
+  section.post h5.date {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: white; }
   section.post .post_img {
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: center;
+    background-background-position: bottom;
     width: auto;
     height: 459px; }
+  section.post .titlebar {
+    padding-bottom: 20px; }
   section.post .title {
     text-align: center; }
+  section.post .content p {
+    padding-top: 20px;
+    color: #555; }
+  section.post .content span.big {
+    font-size: 3.5em;
+    line-height: 50px;
+    float: left;
+    font-weight: 700;
+    margin: 6px 8px -5px 0; }
+  section.post .content blockquote {
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    position: relative;
+    font-size: 18px;
+    padding: 10px 60px;
+    border: 0;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 0 30px 0; }
+  section.post .content blockquote:before {
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    content: '“';
+    font-size: 60px;
+    font-family: serif;
+    color: rgba(0, 0, 0, 0.3); }
 
 section.subscribe-bar {
   background-color: #3498db;
