@@ -1,10 +1,23 @@
 <section class="cards-grid">
   <div class="row">
-    <!-- This loops through the paginated posts -->
-    {% for post in paginator.posts %}
+    {% if page.path == "index.html" %}
+
+      {% for post in paginator.posts %}
         <div class="small-10 small-centered large-uncentered large-4 medium-6 medium-uncentered columns">
           {% include card.html %}
         </div>
-    {% endfor %}
+      {% endfor %}
+
+    {% else %}
+
+      {% for post in site.posts %}
+        {% if {{post.tags}} contains {{include.category}} %}
+          <div class="small-10 small-centered large-uncentered large-4 medium-6 medium-uncentered columns">
+            {% include card.html %}
+          </div>
+        {% endif %}
+      {% endfor %}
+
+    {% endif %}
   </div>
 </section>
