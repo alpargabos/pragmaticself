@@ -1,20 +1,24 @@
 section.featured-post
-  background: url(/assets/img/get-unstuck.png) no-repeat center bottom
-    color: #eede39
-    size: 562px 315px
+  background:
+    size: cover
+    repeat: no-repeat
+    position: 50% 50%
   padding: 0px
   margin: 0px
   font-family: bebas_neuebold
 
   a
+    color: $pragmatic-primary-color
     text-align: center
     transition: all 0.3s ease-in-out
     &:hover
       h1
+        color: white
+        background-color: $pragmatic-primary-color
         display: inline-block
         padding: 0px 10px
         transition: all 0.3s ease-in-out
-        box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3)
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 1)
 
 
 
@@ -22,16 +26,21 @@ section.featured-post
     height: 450px
     width: 100%
     padding-top: 30px
-    color: white
+    color: $pragmatic-primary-color
 
     h1
+      background-color: $pragmatic-primary-color
       color: white
+      padding: 0px 10px
+      display: inline-block
       font-weight: normal
       padding-top: 6px
       font-family: bebas_neuebold
 
     h5
+      display: inline-block
+      padding: 0px 10px
+      background-color: white
       font-size: 14px
       font-weight: bold
-      opacity: 0.5
       font-family: montserrat

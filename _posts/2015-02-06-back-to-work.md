@@ -9,6 +9,7 @@ backgrounds:
 thumb: creative brain-150-01.jpg
 categories: motivation pragmatism
 tags: pragmatism motivation
+ext-url: https://blog.pragmaticself.com/how-to-stop-depression-1fb99f5eed63#.qlpwy6kgn
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porta, felis eget vehicula porttitor, mauris ipsum tincidunt ligula, ac pretium risus sapien at metus. Donec pellentesque volutpat porttitor. Integer condimentum sagittis viverra `var x = 10;`. Vivamus suscipit quis lectus porta sollicitudin.

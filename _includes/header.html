@@ -16,15 +16,26 @@
     </div>
     <div class="top-bar-right">
       <ul class="menu">
-        <li><a href="#home">
-            <div id="top-menu" class="span active">BLOG</div>
+        {% case page.path %}
+          {% when "index.html" %}
+            {% assign index = "active"  %}
+          {% when "about.html" %}
+            {% assign about = "active"  %}
+          {% when "contact.html" %}
+            {% assign contact = "active"  %}
+        {% endcase %}
+        <li><a href="/index.html">
+            <div id="top-menu" class="span {{index}}">BLOG</div>
         </a></li>
-        <li><a href="#about">
-            <div id="top-menu" class="span">ABOUT</div>
+        <li><a href="/about.html">
+            <div id="top-menu" class="span {{about}}">ABOUT</div>
         </a></li>
-        <li><a href="#contact">
-            <div id="top-menu" class="span">CONTACT</div>
+        <li><a href="/contact.html">
+            <div id="top-menu" class="span {{contact}}">CONTACT</div>
         </a></li>
+        <!--
+        Search is disabled for now
+
         <li id="top-menu" class="container">
             <form class="searchbox" id="site_search">
                 <input id="search_box" type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
@@ -35,9 +46,9 @@
       </ul>
       <ul id="search_results" class="search-results search-results-open">
         <li>
-          <!-- TODO: make it center, hide this whole ul, show it only when searching -->
-          <!-- <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> -->
-        </li>
+          TODO: make it center, hide this whole ul, show it only when searching
+          <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+        </li> -->
       </ul>
 
     </div>

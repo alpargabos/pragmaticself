@@ -11,6 +11,7 @@ bg: get-unstuck.png
 bgcolor: /#eede39
 category: motivation
 tags: motivation, life
+ext-url: https://blog.pragmaticself.com/how-to-stop-depression-1fb99f5eed63#.qlpwy6kgn
 ---
 
 <span class="big">W</span>elcome back to part 4 of the SOLID for Android Developers series. Today I’m going to cover the letter I in the SOLID pneumonic acronym - The Interface Segregation Principle (ISP).

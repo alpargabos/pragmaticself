@@ -3,6 +3,7 @@ __Tasks__
 _Website_
 <!-- - title -->
 - favicon in post-page
+- responsive images
 
 _Search_
 - search results view design + code
@@ -12,6 +13,7 @@ _Sub-nav-menu_
 
 _Featured-post_
 - auto generate
+- link should show to the post
 - colors
 - main drawing
 
@@ -29,3 +31,4 @@ _Post-page_
 - video insert
 - flying social bar
 - related articles bar
+- Discuss commenting
