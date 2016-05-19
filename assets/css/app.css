@@ -4796,7 +4796,7 @@ footer {
     padding: 0px 20px;
     color: #bdc3c7; }
     footer a.fa:hover {
-      color: red; }
+      color: #3498db; }
   footer .envelope {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -4908,8 +4908,7 @@ section.map-bp {
     -webkit-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out; }
     section.map-bp a.fa:hover {
-      color: #16a085;
-      font-size: 50px; }
+      font-size: 60px; }
   section.map-bp .social {
     list-style: none;
     display: block;
