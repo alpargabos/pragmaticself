@@ -13,7 +13,7 @@
         <span class="subtitle"> {{post.subtitle}} </span>
       </p>
       <span class="date float-left">{{post.date | date: '%B %d, %Y'}}</span>
-      <span class="category float-right">#{{post.category}}</span>
+      <span class="category float-right">#{{post.tags | join: " / " }}</span>
     </a>
   </div>
 </section>
