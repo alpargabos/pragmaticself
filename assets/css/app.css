@@ -4860,8 +4860,9 @@ footer {
     padding: 5px; }
 
 section.map-bp {
-  background: url("https://s3.amazonaws.com/images.m2i.stamen.com/20160517/watercolor_K8uNHJcu2oE.jpeg") no-repeat center center;
+  background: url("../img/watercolor_map_bp.png") no-repeat center;
     background-color: #34495e;
+    background-size: cover;
   padding: 0px;
   margin: 0px;
   font-family: bebas_neuebold;
