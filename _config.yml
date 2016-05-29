@@ -1,13 +1,13 @@
-name : PragmaticSelf
-brand : PragmaticSelf
-description : Pragmaticself is a collection of motivational, practical, logical advice
-keyword : motivation, pragmatic, self-development, personal development, better life
-url : http://pragmaticself.com
+name : DevDroids
+brand : DevDroids
+description : DevDroids is all about android development
+keyword : android, development, programming, android sdk
+url : http://devdroids.com
 email : info@pragmaticself.com
 twitter : alpargabos
 github : alpargabos
 author : Alpar Gabos
-analytics : UA-8418273-8
+analytics : UA-65345359-3
 year : 2016
 markdown : kramdown
 exclude : ["node_modules", "gulpfile.js", "package.json"]
